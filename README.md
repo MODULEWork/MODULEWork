@@ -1,6 +1,6 @@
 MODULEWork
 ==========
 
-A modular PHP framework.
+A simple and modular PHP framework.
 
-More infos coming soon!
+*License: Apache 2.0*
