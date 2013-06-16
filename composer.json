@@ -1,0 +1,13 @@
+{
+	"name": "MODULEWork Framework",
+	"description": "The MODULEWork Framework.",
+	"keywords": ["framework", "modulework"],
+	"autoload": {
+		"classmap": [
+			"app/controllers",
+			"app/models"
+		],
+		"psr-0": {"MODULEWork\\": "vendor/"}
+	},
+	"minimum-stability": "dev"
+}

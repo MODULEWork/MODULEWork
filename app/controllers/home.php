@@ -1,4 +1,4 @@
-<?php namespace MODULEWork;
+<?php namespace MODULEWork\Controller;
 if (!defined('BASEPATH')) exit('No direct access!');
 
 /**
