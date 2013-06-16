@@ -5,7 +5,21 @@
  * @package MODULEWork
  * @author ChristianGaertner <christiangaertner.film@googlemail.com>
  */
- 
+
+
+/*
+|--------------------------------------------------------------------------
+| Lets start a measurement for the request.
+|--------------------------------------------------------------------------
+|
+| This global define can get very helpful if we want to measure the exec-time
+| of our app. Will be used in the TIMEModule.
+|
+*/
+
+define('MODULEWORK_START', microtime(true));
+
+
 /*
 |--------------------------------------------------------------------------
 | Register the autoloader
@@ -28,7 +42,7 @@ require __DIR__.'/../work/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../work/launch.php';
+$app = require_once __DIR__.'/../work/start.php';
 
 /*
 |--------------------------------------------------------------------------

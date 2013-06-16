@@ -1,7 +1,4 @@
 <?php
-
-define('APP_START', microtime(true));
-
 /*
 |--------------------------------------------------------------------------
 | Register the autoloader
