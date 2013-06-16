@@ -24,3 +24,15 @@ $app->rmTrailingSlash();
 */
 
 $app->setPaths(require __DIR__.'/paths.php');
+
+/*
+|--------------------------------------------------------------------------
+| Return the app
+|--------------------------------------------------------------------------
+|
+| In order to run the app from elsewhere we have to return the instance of
+| our app.
+|
+*/
+
+return $app;
