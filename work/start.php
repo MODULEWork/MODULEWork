@@ -10,7 +10,7 @@
 |
 */
 
-$app = new MODULEWork\Framework\Core;
+$app = new MODULEWork\Framework;
 
 $app->rmTrailingSlash();
 
