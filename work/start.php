@@ -23,7 +23,7 @@ $app->rmTrailingSlash();
 |
 */
 
-$app->setPaths(require __DIR__.'/paths.php');
+$app->setPaths(require __DIR__.'/../paths.php');
 
 /*
 |--------------------------------------------------------------------------

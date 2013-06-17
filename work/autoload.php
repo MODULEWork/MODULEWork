@@ -10,8 +10,7 @@
 */
 
 require __DIR__.'/../vendor/autoload.php';
-
-
+require __DIR__.'/../framework/core.php';
 /*
 |--------------------------------------------------------------------------
 | Our own, independent autoloader
@@ -21,5 +20,6 @@ require __DIR__.'/../vendor/autoload.php';
 | This will take care of loading the last few files
 |
 */
-
+/* COOMING SOON
 MODULEWork\Framework\Extra\ClassLoader::register();
+*/

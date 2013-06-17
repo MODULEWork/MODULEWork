@@ -30,7 +30,7 @@ define('MODULEWORK_START', microtime(true));
 |
 */
 
-require __DIR__.'/../work/autoload.php';
+require __DIR__.'/work/autoload.php';
 
 
 /*
@@ -42,7 +42,7 @@ require __DIR__.'/../work/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../work/start.php';
+$app = require_once __DIR__.'/work/start.php';
 
 /*
 |--------------------------------------------------------------------------

@@ -5,9 +5,9 @@
 	"autoload": {
 		"classmap": [
 			"app/controllers",
-			"app/models"
-		],
-		"psr-0": {"MODULEWork\\": "vendor/"}
+			"app/models",
+			"modules"
+		]
 	},
 	"minimum-stability": "dev"
 }
