@@ -4,6 +4,7 @@
  * MODULEWORK - A modular PHP framwork
  * @package MODULEWork
  * @author ChristianGaertner <christiangaertner.film@googlemail.com>
+ * @version 1.0 Mirco
  */
 
 
@@ -19,18 +20,17 @@
 
 define('MODULEWORK_START', microtime(true));
 
-
 /*
 |--------------------------------------------------------------------------
-| Register the autoloader
+| Define basic pathes
 |--------------------------------------------------------------------------
 |
-| Composer provides an easy way of autoloading classes. We make use of this here,
-| This way we do not need to do this all manually. Relaxing...
+| Lets create some defines for the App 
 |
 */
-
-require __DIR__.'/work/autoload.php';
+define('BASEPATH', dirname(realpath(__FILE__)));
+define('APPPATH', BASEPATH . '/app/');
+define('MODULEPATH', BASEPATH . '/modules/');
 
 
 /*
@@ -42,28 +42,4 @@ require __DIR__.'/work/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/work/start.php';
-
-/*
-|--------------------------------------------------------------------------
-| Launch the application
-|--------------------------------------------------------------------------
-|
-| Now we have heaten up the engines and can launch the framework by calling
-| the run method of our app.
-|
-*/
-
-$app->run();
-
-/*
-|--------------------------------------------------------------------------
-| Cooling the application
-|--------------------------------------------------------------------------
-|
-| Once the request has been processed and lets cool down the engines and
-| fire up the last events before shutting down the app.
-|
-*/
-
-$app->shutdown();
+require_once BASEPATH . '/work/work.php';
